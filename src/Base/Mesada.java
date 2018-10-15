@@ -9,10 +9,9 @@ public class Mesada implements Comparable<Object> {
 		this.ancho = ancho;
 	}
 	
-	public boolean esApilable(Mesada obj) {
-		
-		return (obj.largo>=this.largo && obj.ancho>=this.ancho) || 
-				(obj.largo>=this.ancho && obj.ancho>=this.largo);	
+	public boolean esApilable(Mesada obj) {	
+		return (obj.largo>this.largo && obj.ancho>this.ancho) || 
+				(obj.largo>this.ancho && obj.ancho>this.largo);	
 	}
 	
 	public String toString() {
